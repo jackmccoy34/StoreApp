@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Main.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="contentWrapper">
+            <!--Login menu-->
+            <nav id="utilityMenu">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/"><img src="img/facebook_20.png" alt="Facebook" border="0" class="socialIcon" /></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/?lang=en"><img src="img/twitter_20.png" alt="Twitter" border="0" class="socialIcon" /></a>
+                    </li>
+                    <li>
+                        <a href="https://accounts.google.com"><img src="img/google_plus_20.png" alt="Google Plus" border="0" class="socialIcon" /></a>
+                    </li>
+                    <li class="acctNav"><a href="#" class="active">Login</a></li>
+                    <li class="acctNav"><a href="#" class="active">My Cart</a></li>
+                    <li><input type="search" id="search" placeholder="Search"></li>
+                </ul>
+            </nav>
+            <!--Navigation Menu-->
+            <h1>Nashville</h1>
+            <h2>Bike Store</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Shop Now</a></li>
+                    <li><a href="Trails.html">Nashville Trails</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Refrences.html">Additional Refrences</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h3>Contact</h3>
+
+    <div class="container">
+        <form action="https://formspree.io/mvoaevkr" method="POST">
+
+
+            <input type="text" id="fname" name="firstname" placeholder="First Name">
+            <input type="text" id="lname" name="lastname" placeholder="Last Name">
+            <input type="text" id="eaddress" name="emailaddress" placeholder="Email">
+            <select id="country" name="country">
+            <option value="selectacountry">Select a Country/Region</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">United States</option>
+            <option value="mexico">Mexico</option>
+            <option value="centralamerica">Central America</option>
+            <option value="southamerica">South America</option>
+            <option value="europe">Europe</option>
+            <option value="easterneurope">Eastern Europe</option>
+            <option value="southernasia">Southern Asia</option>
+            <option value="africa">Africa</option>
+            <option value="middleeast">Middle East</option>
+            <option value="asia">Asia</option>
+            <option value="asiapacific">Asia Pacific</option>
+            <option value="other">[Other]</option>
+          </select>
+            <textarea id="subject" name="subject" placeholder="Your Message" style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+    <hl>
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+    </hl>
+</body>
+
+</html>

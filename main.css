@@ -1,0 +1,364 @@
+/*Common elements*/
+
+body {
+    font-size: 67.5%;
+    font-family: Tahoma, Geneva, sans-serif;
+    background: #b42c0a url(img/TigBackground.jpg) fixed top center;
+    padding: 0;
+    margin: 0;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+
+h1 {
+    color: gray;
+    font-size: 2.0em;
+    margin: 0.5em 0 0.5em 0;
+    padding: 0;
+}
+
+h2 {
+    color: rgb(167, 0, 167);
+    font-size: 1.7em;
+    padding: 0px;
+    margin: 0.5em 0 0.35em 0;
+}
+
+h3 {
+    color: purple;
+    font-size: 2.0em;
+    margin: 0.5em 0 0.5em 0;
+    padding: 0;
+}
+
+h4 {
+    color: #C64322;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    height: 50px;
+    color: #dcdcdc81;
+    padding: 0px;
+    margin: 0px 0.5em 0.75em 0px;
+}
+
+ol {
+    font-size: 1.2em;
+    margin: 0 0 0 1.0em;
+    padding: 0 0 0 1.0em;
+}
+
+ol li {
+    margin: 0;
+    padding: 0 0 0.2em;
+}
+
+a,
+a:visited {
+    color: #C64322;
+}
+
+a:hover {
+    color: #333;
+}
+
+hr {
+    padding: 0;
+    margin: 1.5em 1.5em 0.75em 0.5em;
+}
+
+.contentWrapper {
+    margin: 0 Auto;
+    max-width: Auto;
+    padding: 0 3.0em;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+div.clear {
+    clear: both;
+    font-size: 1%;
+}
+
+button {
+    color: #FBF3DB;
+    background-color: green;
+    /*display: inline-block;*/
+    float: right;
+    margin: 0 0.5em 0 0;
+    padding: 0.5em 0.5em;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+    border: 1px solid #745b2f;
+}
+
+
+/*Header*/
+
+header {
+    padding: 2.5em 0 0em;
+    margin: 0 0 0em;
+    background: #39150C url(img/Background.jpg) no-repeat center 0px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+
+header h1 {
+    font-family: "Times New Roman", Times, serif;
+    color: purple;
+    font-size: 7.5em;
+    letter-spacing: -0.025em;
+    margin: 0;
+    text-shadow: 1px 2px 0 grey;
+    /*offset-x | offset-y | blur-radius | color*/
+}
+
+header h2 {
+    font-weight: 300;
+    font-size: 3.8em;
+    color: darkmagenta;
+    margin: -0.4em 0 0 1.0em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-shadow: 1px 2px 0 grey;
+}
+
+
+/*Nav Bars*/
+
+nav {
+    color: #000;
+    font-size: 1.7em;
+    letter-spacing: 0.04em;
+    padding: 1.0em 1.0em 0.5em;
+    margin: 1.0em 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0;
+}
+
+nav li a,
+nav li a:visited {
+    text-decoration: none;
+    color: gray;
+    padding: 0.3em 0.6em;
+}
+
+nav li a:hover {
+    color: purple;
+    background-color: rgba(252, 251, 243, 0.75);
+}
+
+nav#utilityMenu {
+    float: right;
+    margin: -1.5em 0 0 0;
+    padding: 0.35em;
+    height: 1.3em;
+}
+
+nav#utilityMenu li {
+    padding: 0 0.25em 0 0.2em;
+    vertical-align: middle;
+}
+
+nav#utilityMenu ul li.acctNav a,
+nav#utilityMenu ul li.acctNav a:visited {
+    color: lightgray;
+    text-decoration: none;
+    display: inline-block;
+    height: 1.3em;
+    padding: 0.3em;
+    margin: -0.4em 0 0 0;
+    font-size: 0.8em;
+}
+
+nav#utilityMenu ul li.acctNav a.active {
+    background-color: purple;
+    border-radius: 10px;
+}
+
+nav#utilityMenu ul li.acctNav a:hover {
+    background-color: rgba(252, 251, 243, 0.7);
+    color: purple;
+}
+
+nav#utilityMenu li a,
+nav#utilityMenu li a:visited {
+    padding: 0;
+}
+
+nav#utilityMenu li a:hover {
+    background-color: transparent;
+}
+
+nav#utilityMenu ul li input#search {
+    vertical-align: middle;
+    margin: 0 0 0 1.0em;
+}
+
+nav#utilityMenu ul li.acctNav::before,
+nav#utilityMenu ul li input#search::before {
+    content: "| ";
+    color: purple;
+}
+
+.socialIcon {
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+}
+
+.search {
+    background-color: gray;
+}
+
+
+/*Sidebar Section*/
+
+section#sidebar {
+    width: 238px;
+    height: 950px;
+    float: right;
+    position: relative;
+    display: block;
+    background-color: #292929;
+    margin: 1.5em 0 3.0em 1.5em;
+    padding: 1.7em 0.5em 2.0em 1.7em;
+    border-left: purple solid 5px;
+}
+
+
+/*Main Section*/
+
+section#main {
+    background-color: transparent;
+    border-radius: 5px;
+    /*padding: 40px;*/
+    margin: 20px;
+}
+
+section div.panel {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    width: 240px;
+    background-color: #292929;
+    border: purple solid 2px;
+    border-radius: 0.6em;
+    margin: 10px;
+}
+
+section div.panel img.bikeType {
+    border-radius: 0.6em;
+    border: purple solid 1px;
+    ;
+}
+
+
+/*Footer*/
+
+footer {
+    background-color: #40362f;
+    height: 25px;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em 2.0em;
+}
+
+footer ul#menuFooter {
+    display: inline;
+    list-style: none;
+    margin: 0 0 0 0.6em;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0 0.7em 0 0;
+    margin: 0;
+}
+
+footer ul li::before {
+    content: "| ";
+    padding-right: 0.7em;
+}
+
+footer a,
+footer a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+/* Additional Html pages */
+
+.subheader {
+    background: transparent;
+    font-family: monospace;
+    text-align: center;
+    font-size: 20px;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+/* Contact Form */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
